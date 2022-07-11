@@ -1,10 +1,10 @@
+import { productRouter } from '@domain/products/routes/productsRoutes';
 import { Router } from 'express';
 
 const routes = Router();
 
-routes.get('/', (req, res) => {
-  res.json({ message: 'Hello World' });
-});
+
+routes.use('/products', productRouter);
 
 export {
   routes,

@@ -1,9 +1,9 @@
 import { getCustomRepository } from "typeorm";
-import { Product } from "../typeORM/entities/Product";
+import Product from "../typeORM/entities/Product";
 import { ProductRepository } from "../typeORM/repository/productRepository";
 
 
-export class ListProducts{
+export class ListProducts {
 
     private productRepository: ProductRepository
 

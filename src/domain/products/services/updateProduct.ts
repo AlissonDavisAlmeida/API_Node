@@ -1,6 +1,6 @@
 import { AppError } from "@shared/errors/AppError";
 import { getCustomRepository } from "typeorm";
-import { Product } from "../typeORM/entities/Product";
+import Product  from "../typeORM/entities/Product";
 import { ProductRepository } from "../typeORM/repository/productRepository";
 
 interface UpdateProductInterface {

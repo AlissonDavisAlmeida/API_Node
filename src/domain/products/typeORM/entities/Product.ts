@@ -2,7 +2,7 @@ import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateCol
 
 
 @Entity("products")
-export class Product {
+ class Product {
 
     @PrimaryGeneratedColumn("uuid")
     id: string;
@@ -16,11 +16,13 @@ export class Product {
     @Column("int")
     quantity: number;
     
-    @CreateDateColumn()
+    @CreateDateColumn({name: "created_at"})
     createdAt: Date;
     
-    @UpdateDateColumn()
+    @UpdateDateColumn({name: "updated_at"})
     updatedAt: Date;
 
     
 }
+
+export default Product;
