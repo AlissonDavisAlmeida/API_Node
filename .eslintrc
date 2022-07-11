@@ -18,6 +18,8 @@
     "rules": {
         "linebreak-style":"off",
         "import/prefer-default-export": "off",
-        "consistent-return":"off"
+        "consistent-return":"off",
+        "@typescript-eslint/quotes": ["warn", "double"],
+        "class-methods-use-this": "off"
     }
 }
