@@ -6,6 +6,7 @@ import cors from "cors";
 import { AppError } from "@shared/errors/AppError";
 import { errors } from "celebrate";
 import { routes } from "./routes";
+import "dotenv/config"
 
 const app = express();
 

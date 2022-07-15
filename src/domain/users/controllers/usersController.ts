@@ -9,6 +9,8 @@ export class UserController {
 
     const users = await listUsers.execute();
 
+    console.log(request);
+
     return response.json(users);
   }
 
