@@ -17,7 +17,7 @@ export class CreateUser {
     this.userRepository = getCustomRepository(UserRepository);
   }
 
-  public async execut({ name, email, password }: CreateUserDTO): Promise<User> {
+  public async execute({ name, email, password }: CreateUserDTO): Promise<User> {
     const userExists = await this.userRepository.findByEmail(email);
 
     if (userExists) {
