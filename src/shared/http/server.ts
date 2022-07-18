@@ -6,7 +6,7 @@ import cors from "cors";
 import { AppError } from "@shared/errors/AppError";
 import { errors } from "celebrate";
 import { routes } from "./routes";
-import "dotenv/config"
+import "dotenv/config";
 
 const app = express();
 
@@ -25,7 +25,7 @@ app.use((error: Error, request: Request, response: Response, next: NextFunction)
   }
   return response.status(500).json({
     status: 500,
-    error: "Internal server error async",
+    error: `Internal server error async: ${error}`,
 
   });
 });
